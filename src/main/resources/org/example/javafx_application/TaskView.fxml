@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TextField?>
+<VBox spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.javafx_application.TaskController">
+    <TableView fx:id="taskTableView"/>
+    <TextField fx:id="nameField" promptText="Name" editable="true"/>
+    <TextField fx:id="descriptionField" promptText="Description" editable="true"/>
+    <TextField fx:id="statusField" promptText="Status" editable="true"/>
+    <Button text="Add Task" onAction="#addTask"/>
+    <Button text="Edit Task" onAction="#editTask"/>
+    <Button text="Delete Task" onAction="#deleteTask"/>
+</VBox>
